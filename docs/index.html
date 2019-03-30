@@ -1,30 +1,39 @@
-<head>
-  <!-- Look at the camel, not the source code! -->
-  <title>A Camel</title>
-  <style>
-    *{
-      margin:0;
-      padding:0;
-    }
-    body{
-      background:silver;
-    }
-    #camelbox{
-      display:grid;
-      height:100%;
-    }
-    #camel{
-      max-width:100%;
-      max-height:100vh;
-      margin:auto;
-    }
-  </style>
-</head>
-<body>
-  <center>
-    <h1>Oh look, its a camel!</h1>
-    <div id="camelbox">
-      <img id="camel" src="images/camel_1.jpg">
-    </div>
-  </center>
-</body>
+<html>
+  <head>
+    <!-- Look at the camel, not the source code! -->
+    <title>A Camel</title>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+      }
+      body{
+        background:silver;
+      }
+      #camelbox{
+        display:grid;
+        height:100%;
+      }
+      #camel{
+        max-width:100%;
+        max-height:100vh;
+        margin:auto;
+      }
+    </style>
+    <script>
+      onload=function(){
+        camels=2
+        c=Math.floor(Math.random()*camels)
+        camel.src='camel_'+c+'.jpg'
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <h1>Oh look, its a camel!</h1>
+      <div id="camelbox">
+        <img id="camel" src="images/camel_1.jpg">
+      </div>
+    </center>
+  </body>
+</html>
