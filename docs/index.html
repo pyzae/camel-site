@@ -24,7 +24,6 @@
       onload=function(){
         camels=2
         c=Math.floor(Math.random()*camels)
-        camel.onclick=function(){alert(this.source)}
         camel.src='images/camel_'+c+'.jpg'
       }
     </script>
@@ -33,7 +32,7 @@
     <center>
       <h1>Oh look, its a camel!</h1>
       <div id="camelbox">
-        <img id="camel" src="images/camel_1.jpg">
+        <img id="camel" onclick="alert(camel.src)" src="images/camel_1.jpg">
       </div>
     </center>
   </body>
