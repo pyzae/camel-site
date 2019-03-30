@@ -1,9 +1,27 @@
 <head>
+  <!-- Look at the camel, not the source code! -->
   <title>A Camel</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    #camelbox{
+      display:grid;
+      height:100%;
+    }
+    #camel{
+      max-width:100%;
+      max-height:100vh;
+      margin:auto;
+    }
+  </style>
 </head>
 <body>
   <center>
-    there will be a camel here.
-    <img src="images/camel_1.jpg">
+    <b>Oh look, its a camel!</b>
+    <div id="camelbox">
+      <img id="camel" src="images/camel_1.jpg">
+    </div>
   </center>
 </body>
