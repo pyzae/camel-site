@@ -11,18 +11,20 @@
         background:darkgrey;
       }
       #camelbox{
+        margin-top:3vh;
+        margin-bottom:2vh;
         display:grid;
         height:100%;
       }
       #camel{
-        max-width:100%;
-        max-height:100vh;
+        max-width:95vw;
+        max-height:95vh;
         margin:auto;
       }
     </style>
     <script>
       onload=function(){
-        camels=4
+        camels=9
         c=Math.floor(Math.random()*camels)
         c++
         camel.src='images/camel_'+c+'.jpg'
@@ -31,8 +33,8 @@
   </head>
   <body>
     <center>
-      <h1 onclick="alert(camel.src)">Oh look, its a camel!</h1>
       <div id="camelbox">
+        <h1 onclick="alert(camel.src)">Oh look, its a camel!</h1>
         <img id="camel" src="images/loader2.gif"><!-- this image shouldnt be visible -->
       </div>
     </center>
