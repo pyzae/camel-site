@@ -16,6 +16,9 @@
         display:grid;
         height:100%;
       }
+      #header{
+        padding:10px
+      }
       #camel{
         max-width:95vw;
         max-height:95vh;
@@ -34,7 +37,7 @@
   <body>
     <center>
       <div id="camelbox">
-        <h1 onclick="alert(camel.src)">Oh look, its a camel!</h1>
+        <h1 id="header" onclick="alert(camel.src)">Oh look, its a camel!</h1>
         <img id="camel" src="images/loader2.gif"><!-- this image shouldnt be visible -->
       </div>
     </center>
