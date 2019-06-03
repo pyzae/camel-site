@@ -11,12 +11,15 @@
       }
       body{
         background:darkgrey;
+        display:flex;
+        flex-direction:column;
       }
       #camelbox{
         padding-top:3vh;
         padding-bottom:3vh;
         display:grid;
         height:100%;
+        flex:0 0 auto;
       }
       #header{
         padding:10px
@@ -25,6 +28,10 @@
         max-width:95vw;
         max-height:95vh;
         margin:auto;
+      }
+      #redo{
+        min-height:3vh;
+        flex:1 1 auto;
       }
     </style>
     <script>
@@ -45,7 +52,7 @@
         <h1 id="header" onclick="alert(camel.src)">Oh look, its a camel!</h1>
         <img id="camel" src="images/loader2.gif" alt="Camel Loading..."><!-- this image shouldnt be visible -->
       </div>
-      <div onclick="window.onload()" style="height:2vh;"></div>
+      <div onclick="window.onload()" id="redo"></div>
     </center>
   </body>
 </html>
