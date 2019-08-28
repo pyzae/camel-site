@@ -40,7 +40,6 @@
       }
       imgs=[]
       onload=()=>{
-        description=document.getElementById('description')
         fetchcamels().then(()=>{showrandomcamel()}).catch((err)=>{alert('error getting a camel:\n '+err.stack)})
       }
       fetchcamels=async function(){
@@ -59,7 +58,7 @@
         camdat=pickcamel()
         camel.src=camdat.url
         camelname.innerHTML=camdat.name
-        description.innerHTML=camdat.desc
+        cameldesc.innerHTML=camdat.desc
       }
     </script>
   </head>
@@ -75,7 +74,7 @@
         <hr>
         <h3 id="camelname"></h3>
         <img id="camel" src="images/loader2.gif" alt="Camel Loading..."><br><!-- this image shouldnt be visible -->
-        <span id="decription"></span>
+        <span id="cameldesc"></span>
       </div>
       <div onclick="window.onload()" id="redo"></div>
     </center>
