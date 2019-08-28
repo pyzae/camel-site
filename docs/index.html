@@ -40,6 +40,7 @@
       }
       imgs=[]
       onload=()=>{
+        description=document.getElementById('description')
         fetchcamels().then(()=>{showrandomcamel()}).catch((err)=>{alert('error getting a camel:\n '+err.stack)})
       }
       fetchcamels=async function(){
