@@ -1,5 +1,12 @@
 [
-  {"name":"Camel 1","url":"/images/camel_1.jpg","desc":"the original camel!"},
-  {"name":"Camel 3","url":"/images/camel_3.jpg","desc":"handsome camel"},
+  {"name":"Camel Prime","url":"/images/camel_1.jpg","desc":"<b>the original camel!</b>"},
+  {"name":"Camel Name","url":"/images/camel_1.jpg","desc":"tasty spike-bush"},
+  {"name":"Fez","url":"/images/camel_3.jpg","desc":"handsome camel..."},
+  {"name":"Camel 4","url":"/images/camel_4.jpg","desc":"classic bactrian"},
+  {"name":"Carl","url":"/images/camel_5.jpg","desc":"i wonder why he's so happy?"},
+  {"name":"Camel 6","url":"/images/camel_6.jpg","desc":"\"Oh Look, A Human!\""},
+  {"name":"George","url":"/images/camel_7.jpg","desc":"the philosopher"},
+  {"name":"Camel 8","url":"/images/camel_8.jpg","desc":"someone just told him a joke"},
+  {"name":"MultiCamel","url":"/images/camel_9.jpg","desc":"an epic journey..."},
   null
 ]
