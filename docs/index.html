@@ -32,11 +32,33 @@
       }
     </style>
     <script>
-      onload=function(){
+      onload_old=function(){
         camels=9
         c=Math.floor(Math.random()*camels)
         c++
         camel.src='images/camel_'+c+'.jpg'
+      }
+      imgs=[]
+      onload=()=>{
+        fetchcamels().then(()=>{showrandomcamel()}).catch((err)=>{alert('error getting a camel:\n '+err.stack)})
+      }
+      fetchcamels=async function(){
+        r=await fetch('images.json')
+        imgs=await r.json()
+      }
+      pickcamel=()=>{
+        camelcount=imgs.length-1
+        if(camelcount<=0){
+          return {name:'',url:'/notloaded.png',desc:'err: no camels in camel list'}
+        }
+        i=Math.floor(Math.random()*imgcount)
+        return imgs[i]
+      }
+      showrandomcamel=()=>{
+        camdat=pickcsmel()
+        camel.src=camdat.url
+        camelname.innerHTML=camdat.name
+        desceiption.innerHTML=camdat.desc
       }
     </script>
   </head>
@@ -49,7 +71,10 @@
           you have javascript disabled.<br>
           javascript is required to display camels, so enable it if you want to see them.
         </noscript>
-        <img id="camel" src="images/loader2.gif" alt="Camel Loading..."><!-- this image shouldnt be visible -->
+        <hr>
+        <h3 id="camelname"></h3>
+        <img id="camel" src="images/loader2.gif" alt="Camel Loading..."><br><!-- this image shouldnt be visible -->
+        <span id="decription"></span>
       </div>
       <div onclick="window.onload()" id="redo"></div>
     </center>
