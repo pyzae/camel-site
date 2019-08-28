@@ -51,7 +51,7 @@
         if(camelcount<=0){
           return {name:'',url:'/notloaded.png',desc:'err: no camels in camel list'}
         }
-        i=Math.floor(Math.random()*imgcount)
+        i=Math.floor(Math.random()*camelcount)
         return imgs[i]
       }
       showrandomcamel=()=>{
